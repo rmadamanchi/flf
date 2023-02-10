@@ -359,6 +359,22 @@ import ChartDataLabels from 'chartjs-plugin-datalabels';
             back();
             e.preventDefault();
           }
-      })
+    });
+
+    const mouseDelta = 6;
+    let mouseX;
+    let mouseY;
+    document.addEventListener('mousedown', function (event) {
+        mouseX = event.pageX;
+        mouseY = event.pageY;
+    });
+    document.addEventListener('mouseup', function (event) {
+        const diffX = Math.abs(event.pageX - mouseX);
+        const diffY = Math.abs(event.pageY - mouseY);
+
+        if (diffX < mouseDelta && diffY < mouseDelta) {
+            forward();
+        }
+    });
 
 })();
