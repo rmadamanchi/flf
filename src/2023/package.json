@@ -1,0 +1,17 @@
+{
+  "name": "flf-2023",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build --no-scope-hoist --public-url ./ --dist-dir ../../2023 index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "@cubejs-client/core": "^0.31.46",
+    "chart.js": "^4.1.2",
+    "chartjs-plugin-datalabels": "^2.2.0"
+  }
+}

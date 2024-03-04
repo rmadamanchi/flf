@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>FaultLine Flyers 2023</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .slide {
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            display: none
+        }
+        .current {
+            display: block!important;
+        }
+        .chart {
+            margin: auto;
+        }
+        h1 {
+            font-size: 5rem;
+        }
+        .big {
+            font-size: 15rem;
+            color: #F4511E;
+            font-weight: bold
+        }
+        .sub {
+            font-size: 8rem;
+            color: #1E88E5;
+            font-weight: bold
+        }
+        .sub2 {
+            font-size: 6rem;            
+            font-weight: bold
+        }
+        #pageno {
+            position: absolute;
+            left:0;
+            top:0;
+        }
+    </style>
+</head>
+<body>
+
+<span id="pageno">1</span>
+
+<div class="slide current">
+    <h1 style="font-size: 8rem">Fault Line Flyers</h1>
+    <h2 style="font-size: 5rem; color: #1E88E5">2023 In Numbers</h2>
+
+    <img src="./flf.jpg" />
+</div>
+
+
+<div class="slide">
+    <h1>No. of Flying Days in 2023</h1>
+</div>
+
+<div class="slide">
+    <h1>No. of Flying Days in 2023</h1>
+    <div class="big">79</div>
+</div>
+
+<div class="slide">
+    <h1>No. of Flying Days in 2023</h1>
+    <div class="chart" style="width: 800px;"><canvas id="days"></canvas></div>
+    <br/>
+    <div class="chart" style="width: 1024px;"><canvas id="months"></canvas></div>
+</div>
+
+
+
+<div class="slide">
+    <h1>No. of Flights in 2023</h1>
+</div>
+
+<div class="slide">
+    <h1>No. of Flights in 2023</h1>
+    <div class="big">758</div>
+</div>
+
+<div class="slide">
+    <h1>No. of Flights in 2023</h1>
+    <div class="chart" style="width: 800px;"><canvas id="flight_types"></canvas></div>
+</div>
+
+
+
+<div class="slide">
+    <h1>Most Flights in a Day</h1>
+</div>
+
+<div class="slide">
+    <h1>Most Flights in a Day</h1>
+    <div class="big">25</div>
+    <div class="sub">Sat Oct 15</div>
+</div>
+
+<div class="slide">
+    <h1>Most Flights in a Day</h1>
+    <div class="chart" style="width: 1000px;"><canvas id="flights_by_day"></canvas></div>
+</div>
+
+
+
+<div class="slide">
+    <h1>Tow Pilots Hall of Fame</h1>
+</div>
+
+<div class="slide">
+    <h1>Tow Pilots Hall of Fame</h1>
+    <div class="big">128</div>
+    <div class="sub">Tom Barkow</div>
+</div>
+
+<div class="slide">
+    <h1>Tow Pilots Hall of Fame</h1>
+    <div class="chart" style="width: 1200px;"><canvas id="tows"></canvas></div>
+</div>
+
+
+
+<div class="slide">
+    <h1>Pilot with Most Flights in 2023</h1>    
+</div>
+
+<div class="slide">
+    <h1>Pilot with Most Flights in 2023</h1>
+    <div class="big">104</div>
+    <div class="sub">Greg Aaron</div>
+</div>
+
+<div class="slide">
+    <h1>Pilot with Most Flights in 2023</h1>
+    <div class="chart" style="width: 1200px;"><canvas id="flights_by_pilot"></canvas></div>
+</div>
+
+<div class="slide">
+    <h1>Pilot with Most Solo Flights in 2023</h1>
+    <div class="chart" style="width: 1200px;"><canvas id="solo_flights_by_pilot"></canvas></div>
+</div>
+
+<div class="slide">
+    <h1>Pilot with Most Dual Flights (Instruction) in 2023</h1>
+    <div class="chart" style="width: 1200px;"><canvas id="dual_flights_by_pilot"></canvas></div>
+</div>
+
+<div class="slide">
+    <h1>Demo Flights</h1>
+    <div class="chart" style="width: 1200px;"><canvas id="demo_flights"></canvas></div>
+</div>
+
+
+
+
+<div class="slide">
+    <h1>Most Tows by a Tow Pilot In a Day</h1>
+</div>
+
+<div class="slide">
+    <h1>Most Tows by a Tow Pilot In a Day</h1>
+    <div class="big">25</div>
+    <div class="sub">Smokey Doll</div>
+    <div class="sub">Sat, Mar 4</div>
+</div>
+
+<div class="slide">
+    <h1>Most Tows by a Tow Pilot In a Day</h1>
+    <div class="chart" style="width: 1200px;"><canvas id="tows_per_day"></canvas></div>
+</div>
+
+
+
+
+<div class="slide">
+    <h1>Most Glider Flights In a Day</h1>
+</div>
+
+<div class="slide">
+    <h1>Most Glider Flights In a Day</h1>
+    <div class="big">8</div>
+    <div class="sub">Bill Brinmman</div>
+    <div class="sub">Sun, Jun 25</div>
+</div>
+
+<div class="slide">
+    <h1>Most Glider Flights In a Day</h1>
+    <div class="chart" style="width: 1200px;"><canvas id="flights_per_day"></canvas></div>
+</div>
+
+
+
+
+<div class="slide">
+    <h1>Most Active Days at Club <br/><small>(at-least one tow/flight logged)</small></h1>
+</div>
+
+<div class="slide">
+    <h1>Most Active Days at Club <br/><small>(at-least one tow/flight logged)</small></h1>
+    <div class="big">50</div>
+    <div class="sub">Greg Aaron</div>    
+</div>
+
+<div class="slide">
+    <h1>Most Active Days at Club <br/><small>(at-least one tow/flight logged)</small></h1>
+    <div class="chart" style="width: 1200px;"><canvas id="active_days"></canvas></div>
+</div>
+
+
+<div class="slide">
+    <h1>No. of Members with at-least one flight in 2023</h1>    
+</div>
+
+<div class="slide">
+    <h1>No. of Members with at-least one flight in 2023</h1>    
+    <div class="big">63</div>
+</div>
+
+
+
+<div class="slide">
+    <h1>Longest Flight in 2023</h1>
+</div>
+
+<div class="slide">
+    <h1>Longest Flight in 2023</h1>
+    <div class="big">6h 4m</div>
+    <div class="sub">Ely Bins</div>
+    <div class="sub">Sat, Sep 2</div>
+</div>
+
+<div class="slide">
+    <h1>Longest Flight in 2023</h1>
+    <div class="chart" style="width: 1200px;"><canvas id="longest_flights"></canvas></div>
+</div>
+
+
+<div class="slide">
+    <h1>Pilot with most Total Flight Time in 2023</h1>
+</div>
+
+<div class="slide">
+    <h1>Pilot with most Total Flight Time in 2023</h1>
+    <div class="big">81h 29m</div>
+    <div class="sub">Ely Bins</div>
+</div>
+
+<div class="slide">
+    <h1>Pilot with most Total Flight Time in 2023</h1>
+    <div class="chart" style="width: 1200px;"><canvas id="total_flight_time"></canvas></div>
+</div>
+
+
+<div class="slide">
+    <h1>Total Flight Time of 2023</h1>    
+</div>
+
+<div class="slide">
+    <h1>Total Flight Time of 2023</h1>    
+    <div class="big">23d 8h</div>
+</div>
+
+
+<div class="slide">
+    <h1>Thank you</h1>
+</div>
+
+
+<script type="module" src="./index.js"></script>
+
+</body>
+</html>
